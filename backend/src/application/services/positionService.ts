@@ -1,5 +1,4 @@
 import { PrismaClient } from '@prisma/client';
-import { Position } from '../../domain/models/Position';
 
 const prisma = new PrismaClient();
 
@@ -7,6 +6,30 @@ const calculateAverageScore = (interviews: any[]) => {
     if (interviews.length === 0) return 0;
     const totalScore = interviews.reduce((acc, interview) => acc + (interview.score || 0), 0);
     return totalScore / interviews.length;
+};
+
+export const getPositionsService = async () => {
+    try {
+        const positions = await prisma.position.findMany({
+            include: {
+                company: true
+            },
+            orderBy: {
+                id: 'asc'
+            }
+        });
+
+        return positions.map((position) => ({
+            id: position.id,
+            title: position.title,
+            manager: position.company?.name || 'Sin manager',
+            deadline: position.applicationDeadline ? position.applicationDeadline.toISOString().split('T')[0] : 'Sin fecha',
+            status: position.status
+        }));
+    } catch (error) {
+        console.error('Error retrieving positions:', error);
+        throw new Error('Error retrieving positions');
+    }
 };
 
 export const getCandidatesByPositionService = async (positionId: number) => {
