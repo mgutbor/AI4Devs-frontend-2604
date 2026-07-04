@@ -1,6 +1,6 @@
 # Prompt Engineering Report
 
-### Initial prompt
+## Initial prompt
 
 ```markdown
 You are a Senior Frontend Engineer.
@@ -37,7 +37,7 @@ Only explain the current architecture and propose where each new file should liv
 
 ---
 
-### Second prompt
+## Second prompt
 
 ```markdown
 Based on your analysis of the repository, design the implementation of the Position page.
@@ -68,7 +68,7 @@ Provide an implementation plan following best frontend practices.
 
 ---
 
-### Third prompt
+## Third prompt
 
 ```markdown
 Implement only the routing required for the new Position page.
@@ -88,7 +88,7 @@ Explain every change.
 
 ---
 
-### Fourth prompt
+## Fourth prompt
 
 ```markdown
 Implement the API layer for the Position page.
@@ -117,7 +117,7 @@ Do not implement UI yet.
 
 ---
 
-### Fifth prompt
+## Fifth prompt
 
 ```markdown
 Implement the Position page layout.
@@ -139,7 +139,7 @@ Do not implement drag and drop yet.
 
 ---
 
-### Sixth prompt
+## Sixth prompt
 
 ```markdown
 Extend the Position page.
@@ -162,7 +162,7 @@ Do not implement drag and drop yet.
 
 ---
 
-### Seventh prompt
+## Seventh prompt
 
 ```markdown
 Implement drag and drop for the Kanban board.
@@ -181,7 +181,7 @@ Do not connect the backend yet.
 
 ---
 
-### Eight prompt
+## Eight prompt
 
 ```markdown
 Connect the drag-and-drop functionality with the backend.
@@ -212,7 +212,7 @@ Reuse existing notification utilities if available.
 
 ---
 
-### Ninth prompt
+## Ninth prompt
 
 ```markdown
 Improve the Position page responsiveness.
@@ -240,7 +240,7 @@ Do not change the desktop design unnecessarily.
 
 ---
 
-### Tenth prompt
+## Tenth prompt
 
 ```markdown
 Act as a Senior Frontend Reviewer.
@@ -270,7 +270,7 @@ Do not rewrite the entire implementation unless necessary.
 
 ---
 
-### Eleventh prompt
+## Eleventh prompt
 
 ```markdown
 Refactor the implementation without changing its behavior.
@@ -290,7 +290,7 @@ Explain every refactoring.
 
 ---
 
-### Twelfth prompt
+## Twelfth prompt
 
 ```markdown
 You are acting as a Senior Frontend Engineer and Pull Request Reviewer.
@@ -423,7 +423,7 @@ Justify your decision as a Senior Frontend Reviewer.
 
 ---
 
-### Thirteenth prompt
+## Thirteenth prompt
 
 ```markdown
 Remove the hardcoded mockPositions from the frontend and replace them with data loaded from the backend.
@@ -437,7 +437,7 @@ Do not modify the existing endpoints. Keep the implementation minimal, clean and
 
 ---
 
-### Fourteenth prompt
+## Fourteenth prompt
 
 ```markdown
 Generate Playwright end-to-end tests for the Position page.

@@ -96,7 +96,7 @@ const Positions: React.FC = () => {
                                     </span>
                                     <div className="d-flex justify-content-between mt-3">
                                         <Button variant="primary" onClick={() => handleViewProcess(position.id)}>Ver proceso</Button>
-                                        <Button variant="secondary">Editar</Button>
+                                        <Button variant="secondary" disabled>Editar</Button>
                                     </div>
                                 </Card.Body>
                             </Card>
